@@ -104,9 +104,9 @@ class _HomeScreenState extends State<HomeScreen> {
             padding: const EdgeInsets.symmetric(vertical: 10),
             child: ElevatedButton(
               onPressed: () {
-                context.push('/products');
+                context.push('/products', extra: productos);
               },
-              child: Text('Ver productos'),
+              child: const Text('Ver productos'),
             ),
           )
         ],
